@@ -1,41 +1,41 @@
-import type { Metadata } from 'next'
-import Navbar from '@/components/blocks/navbar'
-import FooterColumns from '@/components/blocks/footer-columns'
-import ServiceAreaGrid from '@/components/blocks/service-area-grid'
-import ImageTextSplit from '@/components/blocks/image-text-split'
-import CtaSplit from '@/components/blocks/cta-split'
+import type { Metadata } from "next";
+import Navbar from "@/components/blocks/navbar";
+import ServiceAreaGrid from "@/components/blocks/service-area-grid";
+import ImageTextSplit from "@/components/blocks/image-text-split";
+import CtaSplit from "@/components/blocks/cta-split";
+import FooterColumns from "@/components/blocks/footer-columns";
 
 export const metadata: Metadata = {
-  title: 'Service Areas | Harris Landscaping & Gardens',
+  title: "Service Areas | Harris Landscaping & Gardens",
   description:
-    'Harris Landscaping & Gardens delivers premium landscaping, paving, turf, and outdoor transformations to homeowners across South-West Sydney.',
-}
+    "Harris Landscaping & Gardens proudly services homeowners across South-West Sydney including Campbelltown, Camden, Narellan, Picton, and the wider Macarthur region. Your local landscaping team.",
+};
 
-export default function Page() {
+export default function ServiceAreasPage() {
   return (
     <>
       <Navbar
         cta="Get a Free Quote"
         logo="Harris Landscaping & Gardens"
         links={[
-          { href: '/', label: 'Home' },
-          { href: '/about', label: 'About' },
-          { href: '/services', label: 'Services' },
-          { href: '/project-gallery', label: 'Project Gallery' },
-          { href: '/service-areas', label: 'Service Areas' },
-          { href: '/contact', label: 'Contact' },
+          { href: "/", label: "Home" },
+          { href: "/about", label: "About" },
+          { href: "/services", label: "Services" },
+          { href: "/project-gallery", label: "Project Gallery" },
+          { href: "/service-areas", label: "Service Areas" },
+          { href: "/contact", label: "Contact" },
         ]}
         ctaHref="/contact"
         logoHref="/"
       />
       <ServiceAreaGrid
         areas={[
-          { href: '/service-areas/campbelltown', name: 'Campbelltown' },
-          { href: '/service-areas/camden', name: 'Camden' },
-          { href: '/service-areas/narellan', name: 'Narellan' },
-          { href: '/service-areas/picton', name: 'Picton' },
-          { href: '/service-areas/macarthur', name: 'Macarthur Region' },
-          { href: '/service-areas/south-west-sydney', name: 'South-West Sydney' },
+          { href: "/service-areas/campbelltown", name: "Campbelltown" },
+          { href: "/service-areas/camden", name: "Camden" },
+          { href: "/service-areas/narellan", name: "Narellan" },
+          { href: "/service-areas/picton", name: "Picton" },
+          { href: "/service-areas/macarthur", name: "Macarthur Region" },
+          { href: "/service-areas/south-west-sydney", name: "South-West Sydney" },
         ]}
         heading="Landscaping Across South-West Sydney"
         subheading="We proudly service homeowners and property owners throughout the South-West Sydney region. Whether you're in Campbelltown, Camden, or anywhere in between, Harris Landscaping & Gardens is your local team."
@@ -64,39 +64,39 @@ export default function Page() {
         phone="0400 000 000"
         columns={[
           {
+            heading: "Services",
             links: [
-              { href: '/services#paving', label: 'Paving' },
-              { href: '/services#turf', label: 'Turf Installation' },
-              { href: '/services#retaining-walls', label: 'Retaining Walls' },
-              { href: '/services#decking', label: 'Decking' },
-              { href: '/services#garden-design', label: 'Garden Design' },
-              { href: '/services#outdoor-transformations', label: 'Full Outdoor Transformations' },
+              { href: "/services#paving", label: "Paving" },
+              { href: "/services#turf", label: "Turf Installation" },
+              { href: "/services#retaining-walls", label: "Retaining Walls" },
+              { href: "/services#decking", label: "Decking" },
+              { href: "/services#garden-design", label: "Garden Design" },
+              { href: "/services#outdoor-transformations", label: "Full Outdoor Transformations" },
             ],
-            heading: 'Services',
           },
           {
+            heading: "Service Areas",
             links: [
-              { href: '/service-areas/campbelltown', label: 'Campbelltown' },
-              { href: '/service-areas/camden', label: 'Camden' },
-              { href: '/service-areas/narellan', label: 'Narellan' },
-              { href: '/service-areas/picton', label: 'Picton' },
-              { href: '/service-areas/macarthur', label: 'Macarthur Region' },
-              { href: '/service-areas/south-west-sydney', label: 'South-West Sydney' },
+              { href: "/service-areas/campbelltown", label: "Campbelltown" },
+              { href: "/service-areas/camden", label: "Camden" },
+              { href: "/service-areas/narellan", label: "Narellan" },
+              { href: "/service-areas/picton", label: "Picton" },
+              { href: "/service-areas/macarthur", label: "Macarthur Region" },
+              { href: "/service-areas/south-west-sydney", label: "South-West Sydney" },
             ],
-            heading: 'Service Areas',
           },
           {
+            heading: "Company",
             links: [
-              { href: '/about', label: 'About Us' },
-              { href: '/project-gallery', label: 'Project Gallery' },
-              { href: '/contact', label: 'Contact' },
-              { href: '/contact', label: 'Get a Free Quote' },
+              { href: "/about", label: "About Us" },
+              { href: "/project-gallery", label: "Project Gallery" },
+              { href: "/contact", label: "Contact" },
+              { href: "/contact", label: "Get a Free Quote" },
             ],
-            heading: 'Company',
           },
         ]}
         copyright="© 2026 Harris Landscaping & Gardens. All rights reserved."
       />
     </>
-  )
+  );
 }
